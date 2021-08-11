@@ -10,6 +10,18 @@ struct CurrencyModel: Decodable {
     var PreviousDate: String?
     var Timestamp: String?
     var Valute: [String: Valute]
+    
+    init(currencyData: [String: Any]) {
+        Date = currencyData["Data"] as? String
+        PreviousDate = currencyData["PreviousDate"] as? String
+        Timestamp = currencyData["Timestamp"] as? String
+        Valute = currencyData["Valute"] as! [String: Valute]
+        }
+    
+    static func getCurrencies(from value: Any) -> [CurrencyModel] {
+        guard let currenciesData = value as? [[String: Any]] else { return [] }
+        return currenciesData.compactMap { CurrencyModel(currencyData: $0) }
+    }
 }
 
 struct Valute: Decodable {

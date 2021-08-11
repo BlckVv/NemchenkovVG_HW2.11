@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class CurrencyTableViewController: UITableViewController {
     
@@ -15,7 +16,8 @@ class CurrencyTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 200
-        fetchCurrency(from: "https://www.cbr-xml-daily.ru/daily_json.js")
+        fetchCurrency2()
+        // fetchCurrency(from: "https://www.cbr-xml-daily.ru/daily_json.js")
     }
     
     // MARK: - Table view data source
@@ -38,12 +40,16 @@ class CurrencyTableViewController: UITableViewController {
         
         return cell
     }
-    
-    private func fetchCurrency(from url: String?) {
-        NetworkManager.shared.fetchCurrency(from: url) {  data, currency in
-            self.data = data
-            self.currency = currency
-            self.tableView.reloadData()
-        }
+
+    private func fetchCurrency2() {
+        NetworkManager.shared.fetchCurrency2()
     }
+    
+//    private func fetchCurrency(from url: String?) {
+//        NetworkManager.shared.fetchCurrency(from: url) {  data, currency in
+//            self.data = data
+//            self.currency = currency
+//            self.tableView.reloadData()
+//        }
+//    }
 }
