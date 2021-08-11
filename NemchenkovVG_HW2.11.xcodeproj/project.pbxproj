@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64A193D9F285E61A5B4B3DB4 /* Pods_NemchenkovVG_HW2_11.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6DDFCB3FEB843B14FB547C /* Pods_NemchenkovVG_HW2_11.framework */; };
 		E618CAEF26C3FB4100BD827A /* CurrencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618CAEE26C3FB4100BD827A /* CurrencyTableViewController.swift */; };
 		E618CAF126C3FB9500BD827A /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618CAF026C3FB9500BD827A /* CurrencyTableViewCell.swift */; };
 		E618CAF326C3FBB900BD827A /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618CAF226C3FBB900BD827A /* CurrencyModel.swift */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A6DDFCB3FEB843B14FB547C /* Pods_NemchenkovVG_HW2_11.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NemchenkovVG_HW2_11.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7FB48C99E520A973CC13500 /* Pods-NemchenkovVG_HW2.11.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemchenkovVG_HW2.11.release.xcconfig"; path = "Target Support Files/Pods-NemchenkovVG_HW2.11/Pods-NemchenkovVG_HW2.11.release.xcconfig"; sourceTree = "<group>"; };
 		E618CAEE26C3FB4100BD827A /* CurrencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewController.swift; sourceTree = "<group>"; };
 		E618CAF026C3FB9500BD827A /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		E618CAF226C3FBB900BD827A /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		E667F85326C3F1B3008A21A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E667F85626C3F1B3008A21A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E667F85826C3F1B3008A21A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE2CA73894BC7BBE5208DDC2 /* Pods-NemchenkovVG_HW2.11.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemchenkovVG_HW2.11.debug.xcconfig"; path = "Target Support Files/Pods-NemchenkovVG_HW2.11/Pods-NemchenkovVG_HW2.11.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A193D9F285E61A5B4B3DB4 /* Pods_NemchenkovVG_HW2_11.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B827E46003B8316BEA919FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE2CA73894BC7BBE5208DDC2 /* Pods-NemchenkovVG_HW2.11.debug.xcconfig */,
+				C7FB48C99E520A973CC13500 /* Pods-NemchenkovVG_HW2.11.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D194C3CAC5FD4D6EEB5AAE17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A6DDFCB3FEB843B14FB547C /* Pods_NemchenkovVG_HW2_11.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E667F83E26C3F1B0008A21A6 = {
 			isa = PBXGroup;
 			children = (
 				E667F84926C3F1B0008A21A6 /* NemchenkovVG_HW2.11 */,
 				E667F84826C3F1B0008A21A6 /* Products */,
+				3B827E46003B8316BEA919FA /* Pods */,
+				D194C3CAC5FD4D6EEB5AAE17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E667F85B26C3F1B3008A21A6 /* Build configuration list for PBXNativeTarget "NemchenkovVG_HW2.11" */;
 			buildPhases = (
+				165BEB4A0D52D7D07A248AAE /* [CP] Check Pods Manifest.lock */,
 				E667F84326C3F1B0008A21A6 /* Sources */,
 				E667F84426C3F1B0008A21A6 /* Frameworks */,
 				E667F84526C3F1B0008A21A6 /* Resources */,
+				C7A512E12F6FC492EFD14E2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +223,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		165BEB4A0D52D7D07A248AAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NemchenkovVG_HW2.11-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7A512E12F6FC492EFD14E2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NemchenkovVG_HW2.11/Pods-NemchenkovVG_HW2.11-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NemchenkovVG_HW2.11/Pods-NemchenkovVG_HW2.11-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NemchenkovVG_HW2.11/Pods-NemchenkovVG_HW2.11-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E667F84326C3F1B0008A21A6 /* Sources */ = {
@@ -351,6 +420,7 @@
 		};
 		E667F85C26C3F1B3008A21A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE2CA73894BC7BBE5208DDC2 /* Pods-NemchenkovVG_HW2.11.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -369,6 +439,7 @@
 		};
 		E667F85D26C3F1B3008A21A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7FB48C99E520A973CC13500 /* Pods-NemchenkovVG_HW2.11.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

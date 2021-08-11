@@ -1,0 +1,6 @@
+framework module Pods_NemchenkovVG_HW2_11 {
+  umbrella header "Pods-NemchenkovVG_HW2.11-umbrella.h"
+
+  export *
+  module * { export * }
+}
